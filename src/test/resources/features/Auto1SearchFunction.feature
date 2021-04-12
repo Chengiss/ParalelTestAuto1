@@ -1,7 +1,7 @@
 Feature: Search Function
   @wip
     #1
-  Scenario: verify using "first registiration filter" together with "price sorting"
+  Scenario: verify using "first registiration filter" and "price sorting"
     #2
     Given the user is on the "search" page
     #3
