@@ -4,10 +4,10 @@ AUTO1 TASK
 
 
 
-### _TASK 1: Address Validation Scenario_
+#### _TASK 1: Address Validation Scenario_
 * Task 1 is attached under the Task 2 project files and named **_Auto1_Task1_Address_Validation.xlsx_**
 
-### _TASK 2: Search Function Automation_
+#### _TASK 2: Search Function Automation_
 * To get _html test report_ after execution, run the task through `mvn verify` command.
 
 ```gherkin
