@@ -1,5 +1,6 @@
 Feature: Search Function
-  @cuk
+
+  @cuk @regression
     #1
   Scenario: verify search function using "first registiration filter" and "price sorting"
     #2
@@ -20,7 +21,7 @@ Feature: Search Function
     #5 any year(int) together with "newer" and "older" options are selectable
     #6 "ascending" or "descending" options are available for verifying price sort.
 
-  @cuk1
+  @cuk1 @smoke
   Scenario: verify search function using "first registiration filter" and "price sorting"
 
     Given the user is on the "search" page
@@ -28,3 +29,5 @@ Feature: Search Function
     And sorting option is as "Niedrigster Preis" selected
     Then all cars' registrations should be 2018 and "older"
     And all cars are sorted by price "ascending"
+
+
