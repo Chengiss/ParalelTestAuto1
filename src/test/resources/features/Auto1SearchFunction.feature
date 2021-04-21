@@ -1,6 +1,6 @@
 Feature: Search Function
 
-  @cuk @regression
+   @regression
     #1
   Scenario: verify search function using "first registiration filter" and "price sorting"
     #2
@@ -21,7 +21,7 @@ Feature: Search Function
     #5 any year(int) together with "newer" and "older" options are selectable
     #6 "ascending" or "descending" options are available for verifying price sort).
 
-  @cuk1 @smoke
+  @smoke
   Scenario: verify search function using "first registiration filter" and "price sorting"
 
     Given the user is on the "search" page

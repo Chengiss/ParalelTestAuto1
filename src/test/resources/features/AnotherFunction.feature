@@ -1,6 +1,5 @@
 Feature: Another Function
 
-  @smoke
   Scenario: verify search function using "first registiration filter" and "price sorting"
 
     Given the user is on the "search" page
