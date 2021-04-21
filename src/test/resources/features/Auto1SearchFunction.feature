@@ -1,8 +1,8 @@
 Feature: Search Function
 
-   @regression
+   @smoke
     #1
-  Scenario: verify search function using "first registiration filter" and "price sorting"
+  Scenario: smoke
     #2
     Given the user is on the "search" page
     #3
@@ -21,8 +21,8 @@ Feature: Search Function
     #5 any year(int) together with "newer" and "older" options are selectable
     #6 "ascending" or "descending" options are available for verifying price sort).
 
-  @smoke
-  Scenario: verify search function using "first registiration filter" and "price sorting"
+  @regression
+  Scenario: regresyon
 
     Given the user is on the "search" page
     When registration filter is year "2018" and "bis" selected
