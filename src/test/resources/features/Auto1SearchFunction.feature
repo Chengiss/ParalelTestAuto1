@@ -1,6 +1,6 @@
 Feature: Search Function
 
-   @smoke
+  @smoke
     #1
   Scenario: smoke
     #2
