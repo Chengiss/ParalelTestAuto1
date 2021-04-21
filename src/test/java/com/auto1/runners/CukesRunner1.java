@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                   "html:target/default-html-reports",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
-        glue = "com/auto1/resources",  //step_definitions
+        glue = "com/auto1/step_definitions",
         dryRun = false,
         tags = "@smoke"
 )
