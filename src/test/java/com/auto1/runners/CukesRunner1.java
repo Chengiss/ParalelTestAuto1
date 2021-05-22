@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber1.json",
                 "html:target/default-report1/report1.html",
                 "rerun:target/rerun.txt"},
-        features = "src/test/resources/features/AnotherFunction.feature",
+        features = "src/test/resources/features",
         glue = "com/auto1/step_definitions",
         dryRun = false,
         tags = "@smoke"

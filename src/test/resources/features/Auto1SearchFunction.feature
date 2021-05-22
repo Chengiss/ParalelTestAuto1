@@ -1,4 +1,4 @@
-@smoke
+
 Feature: Search Function
 
     #1
