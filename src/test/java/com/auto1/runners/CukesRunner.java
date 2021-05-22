@@ -13,6 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/Auto1SearchFunction.feature",
         glue = "com/auto1/step_definitions",
         dryRun = false
+        //
 )
 public class CukesRunner {
 }
