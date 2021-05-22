@@ -30,14 +30,14 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.7.0</version>
+            <version>6.9.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>5.7.0</version>
+            <version>6.9.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -55,6 +55,7 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <includes>
                         <include>**/CukesRunner*.java</include>
+                        <include>**/CukesRunner1*.java</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -75,7 +76,8 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>**/cucumber*.json</param>
+                                <param>**/cucumber.json</param>
+                                <param>**/cucumber1.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>

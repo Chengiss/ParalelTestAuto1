@@ -1,6 +1,7 @@
+@regression
 Feature: Another Function
 
-  Scenario: verify search function using "first registiration filter" and "price sorting"
+  Scenario: another scenario
 
     Given the user is on the "search" page
     When registration filter is year "2018" and "bis" selected

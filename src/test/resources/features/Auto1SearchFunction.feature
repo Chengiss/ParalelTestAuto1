@@ -1,6 +1,6 @@
+@smoke
 Feature: Search Function
 
-  @smoke
     #1
   Scenario: smoke
     #2
@@ -21,7 +21,7 @@ Feature: Search Function
     #5 any year(int) together with "newer" and "older" options are selectable
     #6 "ascending" or "descending" options are available for verifying price sort).
 
-  @regression
+
   Scenario: regresyon
 
     Given the user is on the "search" page
