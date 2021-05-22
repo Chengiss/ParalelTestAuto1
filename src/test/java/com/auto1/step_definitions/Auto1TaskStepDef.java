@@ -7,8 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +37,9 @@ public class Auto1TaskStepDef {
     @When("registration filter is year {string} and {string} selected")
     public void registration_filter_is_year_and_selected(String year, String abOrBis) throws InterruptedException, Exception {
         searchPage.yearFilterButton.click();
-        Thread.sleep(2000);
+        new WebDriverWait(Driver.get(),5)
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".container___2SMPk.menuContainer___22AAQ.containerBottomEnd___1NYoL select#rangeEnd"))
+                );
         if(abOrBis.equalsIgnoreCase("ab")) {
             Select dropdownAb = new Select(searchPage.registrationRangeStart);
             dropdownAb.selectByVisibleText(year);
