@@ -34,6 +34,7 @@ public class Auto1TaskStepDef {
     @When("registration filter is year {string} and {string} selected")
     public void registration_filter_is_year_and_selected(String year, String abOrBis) throws InterruptedException, Exception {
         searchPage.yearFilterButton.click();
+        Thread.sleep(2000);
         if(abOrBis.equalsIgnoreCase("ab")) {
             Select dropdownAb = new Select(searchPage.registrationRangeStart);
             dropdownAb.selectByVisibleText(year);
