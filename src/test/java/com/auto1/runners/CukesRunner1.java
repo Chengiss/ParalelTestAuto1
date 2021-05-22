@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features/AnotherFunction.feature",
         glue = "com/auto1/step_definitions",
-        dryRun = false
+        dryRun = false,
+        tags = "@smoke"
 
 
 )
